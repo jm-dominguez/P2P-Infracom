@@ -10,7 +10,7 @@ public class Cliente2 {
 	
 	public static void main(String []args) throws Exception{
 		InetAddress address = InetAddress.getLocalHost();
-		SharedTorrent torrent = SharedTorrent.fromFile(new File("./files2/in/Black Label XXL.torrent"), new File("./files/in"));
+		SharedTorrent torrent = SharedTorrent.fromFile(new File("./files2/in/Black Label XXL.torrent"), new File("./files2/in"));
 		Client client = new Client(address, torrent);
 		
 		client.setMaxDownloadRate(0.0);
@@ -20,5 +20,5 @@ public class Cliente2 {
 		
 		client.share();
 	}
-
+ 
 }
